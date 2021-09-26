@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector3.right * speed);
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -40,6 +41,7 @@ public class PlayerController : MonoBehaviour
             dir = Vector3.forward;
             rot = 90;
         }
+
 
         transform.Rotate(dir * rot);//back is right, forward is left
     }
